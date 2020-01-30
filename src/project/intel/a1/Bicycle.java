@@ -27,12 +27,17 @@ package project.intel.a1;
          speed = speed - decrement;
          System.out.println("This will make break");
      }
+     void changeNumber(double newValue){
+         number = newValue;
+         System.out.println("It's will change the number");
+     }
 
      void printStates() {
          System.out.println(
                  "cadence:" + cadence +
                          "speed:" + speed +
-                         "gear:" + gear);
+                         "gear:" + gear+
+                 "number"+ number );
      }
 
 
@@ -43,6 +48,7 @@ package project.intel.a1;
         meersBicycle.changeCadance(20);
         meersBicycle.changeGear( 4);
         meersBicycle.speedUp( 15);
+        meersBicycle.changeNumber(6.0E00f);
         System.out.println(cadence);
 
     }
