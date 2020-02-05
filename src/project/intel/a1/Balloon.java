@@ -4,7 +4,7 @@ package project.intel.a1;
 
 public class Balloon {
     int howmany;
-    String gasA;
+    String gasA="radon";
     String gasB;
     String gasC;
     String gasD;
@@ -54,8 +54,8 @@ public class Balloon {
         return gasB;
     }
 
-    public void setGasB(String gasB) {
-        this.gasB = gasB;
+    public void setGasB(String gastt) {
+        this.gasB = gastt;
     }
 
     public String getGasC() {
@@ -96,6 +96,9 @@ public class Balloon {
             System.out.println(balloon2.getGasA());
             balloon1.setGasC("gaan");
             System.out.println(balloon1.getGasC());
+            balloon2.setGasB("kali");
+            System.out.println(balloon2.getGasB());
+
         }
     }
 
